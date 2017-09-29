@@ -16,12 +16,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setUpViews];
+}
+
+- (void)setUpViews {
+    
+}
+
+#pragma mark UINavigation Setting
+- (void)addRightActionWithTitle:(NSString *)title{
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonAction:)];
+    [buttonItem setTintColor:ColorWithValue(0x1b8bff)];
+    self.navigationItem.rightBarButtonItem = buttonItem;
+}
+
+- (void)rightBarButtonAction:(id)sender{
+    
+}
+
+- (void)addRightActionWithImage:(NSString *)imageName{
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:imageName] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonAction:)];
+    self.navigationItem.rightBarButtonItem = buttonItem;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)showLoadingView{
+    
+}
+
+- (void)dismissLoadingView{
+    
+}
+
+- (void)loadingFailedWithMessage:(NSString *)errMsg{
+    
 }
 
 @end

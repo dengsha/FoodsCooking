@@ -16,6 +16,7 @@
 		9B54E45C1F7C95CF00108F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4581F7C95CF00108F3C /* main.m */; };
 		9B54E4621F7C961800108F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E45F1F7C961800108F3C /* AppDelegate.m */; };
 		9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */; };
+		9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */; };
 		EE5C0A2F767F0EF1DCC7CB57 /* libPods-Foods CookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,10 @@
 		9B54E45F1F7C961800108F3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B54E4671F7CFE3200108F3C /* FCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseViewController.h; sourceTree = "<group>"; };
 		9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseViewController.m; sourceTree = "<group>"; };
+		9B56768D1F7DDB0D00DE38F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9B56768E1F7E190F00DE38F5 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		9B5676911F7E208C00DE38F5 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8976BA13F4D5EDF0F486045 /* Pods-Foods CookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookTests/Pods-Foods CookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +141,7 @@
 				9B54E4521F7C95CF00108F3C /* Base.lproj */,
 				9B54E4581F7C95CF00108F3C /* main.m */,
 				9B54E4501F7C93E300108F3C /* Info.plist */,
+				9B56768D1F7DDB0D00DE38F5 /* PrefixHeader.pch */,
 			);
 			path = SuportFiles;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 		9B54E4651F7CFDD500108F3C /* General */ = {
 			isa = PBXGroup;
 			children = (
+				9B56768C1F7DDA3100DE38F5 /* Tools */,
 				9B54E4661F7CFDD500108F3C /* BaseNeeds */,
 			);
 			path = General;
@@ -172,6 +179,16 @@
 				9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */,
 			);
 			path = BaseNeeds;
+			sourceTree = "<group>";
+		};
+		9B56768C1F7DDA3100DE38F5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9B56768E1F7E190F00DE38F5 /* UIColor+Hex.h */,
+				9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */,
+				9B5676911F7E208C00DE38F5 /* ColorMacro.h */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		9C554B9D75CFF1205A02045A /* Frameworks */ = {
@@ -478,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */,
+				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
 				9B54E4621F7C961800108F3C /* AppDelegate.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
 			);
@@ -635,6 +653,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/dengsha/Documents/GitHub/FoodsCooking/Foods Cook/SuportFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = "Foods Cook/SuportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "deng.Foods-Cook";
@@ -649,6 +669,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/dengsha/Documents/GitHub/FoodsCooking/Foods Cook/SuportFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = "Foods Cook/SuportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "deng.Foods-Cook";
