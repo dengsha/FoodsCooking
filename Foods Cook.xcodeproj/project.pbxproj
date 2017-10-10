@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		2BE9EF369FDBCBEA78B05A88 /* libPods-Foods CookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */; };
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
+		9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */; };
+		9B532A111F8CA3E800C07458 /* FCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */; };
+		9B532A141F8CA41F00C07458 /* FCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A131F8CA41F00C07458 /* FCDetailViewController.m */; };
+		9B532A171F8CA43200C07458 /* FCMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A161F8CA43200C07458 /* FCMyMessageViewController.m */; };
+		9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */; };
 		9B54E4371F7C92E100108F3C /* Foods_CookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4361F7C92E100108F3C /* Foods_CookTests.m */; };
 		9B54E4511F7C93E300108F3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B54E4501F7C93E300108F3C /* Info.plist */; };
 		9B54E4591F7C95CF00108F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B54E4531F7C95CF00108F3C /* LaunchScreen.storyboard */; };
 		9B54E45B1F7C95CF00108F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B54E4571F7C95CF00108F3C /* Assets.xcassets */; };
 		9B54E45C1F7C95CF00108F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4581F7C95CF00108F3C /* main.m */; };
-		9B54E4621F7C961800108F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E45F1F7C961800108F3C /* AppDelegate.m */; };
+		9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E45F1F7C961800108F3C /* FCAppDelegate.m */; };
 		9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */; };
 		9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */; };
 		EE5C0A2F767F0EF1DCC7CB57 /* libPods-Foods CookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */; };
@@ -45,6 +50,16 @@
 		4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods Cook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CF03BA0583A792C8A85D00 /* Pods-Foods CookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookUITests/Pods-Foods CookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B532A091F8CA27E00C07458 /* FCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseTabBarViewController.h; sourceTree = "<group>"; };
+		9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseTabBarViewController.m; sourceTree = "<group>"; };
+		9B532A0F1F8CA3E800C07458 /* FCHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCHomePageViewController.h; sourceTree = "<group>"; };
+		9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCHomePageViewController.m; sourceTree = "<group>"; };
+		9B532A121F8CA41F00C07458 /* FCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDetailViewController.h; sourceTree = "<group>"; };
+		9B532A131F8CA41F00C07458 /* FCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDetailViewController.m; sourceTree = "<group>"; };
+		9B532A151F8CA43200C07458 /* FCMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCMyMessageViewController.h; sourceTree = "<group>"; };
+		9B532A161F8CA43200C07458 /* FCMyMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCMyMessageViewController.m; sourceTree = "<group>"; };
+		9B532A181F8CCADC00C07458 /* FCBaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseNavigationViewController.h; sourceTree = "<group>"; };
+		9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseNavigationViewController.m; sourceTree = "<group>"; };
 		9B54E41A1F7C92E100108F3C /* Foods Cook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foods Cook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B54E4321F7C92E100108F3C /* Foods CookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foods CookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B54E4361F7C92E100108F3C /* Foods_CookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foods_CookTests.m; sourceTree = "<group>"; };
@@ -54,8 +69,8 @@
 		9B54E4541F7C95CF00108F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B54E4571F7C95CF00108F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B54E4581F7C95CF00108F3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B54E45E1F7C961800108F3C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9B54E45F1F7C961800108F3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B54E45E1F7C961800108F3C /* FCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAppDelegate.h; sourceTree = "<group>"; };
+		9B54E45F1F7C961800108F3C /* FCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAppDelegate.m; sourceTree = "<group>"; };
 		9B54E4671F7CFE3200108F3C /* FCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseViewController.h; sourceTree = "<group>"; };
 		9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseViewController.m; sourceTree = "<group>"; };
 		9B56768D1F7DDB0D00DE38F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -94,6 +109,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B532A081F8CA0A200C07458 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9B532A0D1F8CA3C300C07458 /* Detail */,
+				9B532A0C1F8CA3C300C07458 /* Home */,
+				9B532A0E1F8CA3C300C07458 /* Mine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9B532A0C1F8CA3C300C07458 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9B532A0F1F8CA3E800C07458 /* FCHomePageViewController.h */,
+				9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9B532A0D1F8CA3C300C07458 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9B532A121F8CA41F00C07458 /* FCDetailViewController.h */,
+				9B532A131F8CA41F00C07458 /* FCDetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9B532A0E1F8CA3C300C07458 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9B532A151F8CA43200C07458 /* FCMyMessageViewController.h */,
+				9B532A161F8CA43200C07458 /* FCMyMessageViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		9B54E4111F7C92E100108F3C = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +170,7 @@
 		9B54E41C1F7C92E100108F3C /* Foods Cook */ = {
 			isa = PBXGroup;
 			children = (
+				9B532A081F8CA0A200C07458 /* Classes */,
 				9B54E4651F7CFDD500108F3C /* General */,
 				9B54E45D1F7C961800108F3C /* AppDelegate */,
 				9B54E44F1F7C93E300108F3C /* SuportFiles */,
@@ -157,8 +210,10 @@
 		9B54E45D1F7C961800108F3C /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				9B54E45E1F7C961800108F3C /* AppDelegate.h */,
-				9B54E45F1F7C961800108F3C /* AppDelegate.m */,
+				9B54E45E1F7C961800108F3C /* FCAppDelegate.h */,
+				9B54E45F1F7C961800108F3C /* FCAppDelegate.m */,
+				9B532A091F8CA27E00C07458 /* FCBaseTabBarViewController.h */,
+				9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -177,6 +232,8 @@
 			children = (
 				9B54E4671F7CFE3200108F3C /* FCBaseViewController.h */,
 				9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */,
+				9B532A181F8CCADC00C07458 /* FCBaseNavigationViewController.h */,
+				9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */,
 			);
 			path = BaseNeeds;
 			sourceTree = "<group>";
@@ -285,6 +342,7 @@
 		9B54E4121F7C92E100108F3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FC;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "邓莎";
 				TargetAttributes = {
@@ -495,9 +553,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */,
+				9B532A171F8CA43200C07458 /* FCMyMessageViewController.m in Sources */,
+				9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */,
 				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
-				9B54E4621F7C961800108F3C /* AppDelegate.m in Sources */,
+				9B532A141F8CA41F00C07458 /* FCDetailViewController.m in Sources */,
+				9B532A111F8CA3E800C07458 /* FCHomePageViewController.m in Sources */,
+				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
+				9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,17 +6,21 @@
 //  Copyright © 2017年 邓莎. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "FCAppDelegate.h"
+#import "FCBaseTabBarViewController.h"
 
-@interface AppDelegate ()
+@interface FCAppDelegate ()
 
 @end
 
-@implementation AppDelegate
-
+@implementation FCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    FCBaseTabBarViewController *tabBarController = [[FCBaseTabBarViewController alloc] init];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
