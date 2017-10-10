@@ -16,8 +16,8 @@ static inline UIColor *ColorWithValue(unsigned long colorString){
     return [UIColor colorWithHexValue:colorString];
 }
 
-static inline UIColor *ColorWithValueAndAlpha(unsigned long colorString, CGFlot alpha){
-    return [UIColor colorWithHexValue:colorSting andAlpha:alpha];
+static inline UIColor *ColorWithValueAndAlpha(unsigned long colorString, CGFloat alpha){
+    return [UIColor colorWithHexValue:colorString andAlpha:alpha];
 }
 
 #endif /* ColorMacro_h */
