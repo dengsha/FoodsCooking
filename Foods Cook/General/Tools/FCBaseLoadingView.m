@@ -1,0 +1,14 @@
+//
+//  FCBaseLoadingView.m
+//  Foods Cook
+//
+//  Created by 邓莎 on 2017/10/11.
+//  Copyright © 2017年 邓莎. All rights reserved.
+//
+
+#import "FCBaseLoadingView.h"
+
+@implementation FCBaseLoadingView
+
+
+@end

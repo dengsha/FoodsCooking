@@ -12,6 +12,17 @@
 #ifndef ColorMacro_h
 #define ColorMacro_h
 
+///主题蓝
+static const unsigned long ThemColor = 0x1b8bff;
+///黑色
+static const unsigned long BlackTextColor = 0x333333;
+
+/**
+ 根据16进制设置颜色
+
+ @param colorString 16进制
+ @return 颜色
+ */
 static inline UIColor *ColorWithValue(unsigned long colorString){
     return [UIColor colorWithHexValue:colorString];
 }

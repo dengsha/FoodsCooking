@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BE9EF369FDBCBEA78B05A88 /* libPods-Foods CookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */; };
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
+		9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */; };
 		9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */; };
 		9B532A111F8CA3E800C07458 /* FCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */; };
 		9B532A141F8CA41F00C07458 /* FCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A131F8CA41F00C07458 /* FCDetailViewController.m */; };
@@ -50,6 +51,8 @@
 		4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods Cook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CF03BA0583A792C8A85D00 /* Pods-Foods CookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookUITests/Pods-Foods CookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B41E0791F8DBC3300E29BFF /* FCBaseLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseLoadingView.h; sourceTree = "<group>"; };
+		9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseLoadingView.m; sourceTree = "<group>"; };
 		9B532A091F8CA27E00C07458 /* FCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseTabBarViewController.h; sourceTree = "<group>"; };
 		9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseTabBarViewController.m; sourceTree = "<group>"; };
 		9B532A0F1F8CA3E800C07458 /* FCHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCHomePageViewController.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				9B56768E1F7E190F00DE38F5 /* UIColor+Hex.h */,
 				9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */,
 				9B5676911F7E208C00DE38F5 /* ColorMacro.h */,
+				9B41E0791F8DBC3300E29BFF /* FCBaseLoadingView.h */,
+				9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 				9B532A141F8CA41F00C07458 /* FCDetailViewController.m in Sources */,
 				9B532A111F8CA3E800C07458 /* FCHomePageViewController.m in Sources */,
 				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
+				9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
 				9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */,
 			);
