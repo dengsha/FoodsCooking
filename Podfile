@@ -4,6 +4,11 @@
 target 'Foods Cook' do
 pod 'AFNetworking','~>2.6.0'
 pod 'Masonry'
+pod 'JSONModel'
+pod 'SVProgressHUD'
+pod 'YYModel'
+pod 'FMDB'
+pod 'MJRefresh'
 
   target 'Foods CookTests' do
     inherit! :search_paths
