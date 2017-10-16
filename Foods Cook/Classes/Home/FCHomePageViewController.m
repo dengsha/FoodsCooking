@@ -7,6 +7,7 @@
 //
 
 #import "FCHomePageViewController.h"
+#import "FCSheetView.h"
 
 @interface FCHomePageViewController ()
 
@@ -17,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"首页"];
+    
+    UIButton *bnt = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+    bnt.backgroundColor = [UIColor blueColor];
+    [bnt addTarget:self action:@selector(jump:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bnt];
+    
+}
+
+- (void)jump:(id)sender{
+    FCSheetView *sheet = [[FCSheetView alloc] initWithTitles:@[@"23",@"11"] cancleTitle:@"取消"];
+    [self.view addSubview:sheet];
+    [sheet mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
