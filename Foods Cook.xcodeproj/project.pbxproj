@@ -11,10 +11,10 @@
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
 		9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */; };
 		9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */; };
-		9B532A111F8CA3E800C07458 /* FCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */; };
-		9B532A141F8CA41F00C07458 /* FCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A131F8CA41F00C07458 /* FCDetailViewController.m */; };
-		9B532A171F8CA43200C07458 /* FCMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A161F8CA43200C07458 /* FCMyMessageViewController.m */; };
 		9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */; };
+		9B54972C1F975E74006773D0 /* FCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5497291F975E74006773D0 /* FCDetailViewController.m */; };
+		9B5497321F975E84006773D0 /* FCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5497301F975E84006773D0 /* FCHomePageViewController.m */; };
+		9B5497381F975E8F006773D0 /* FCMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5497371F975E8F006773D0 /* FCMyMessageViewController.m */; };
 		9B54E4371F7C92E100108F3C /* Foods_CookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4361F7C92E100108F3C /* Foods_CookTests.m */; };
 		9B54E4511F7C93E300108F3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B54E4501F7C93E300108F3C /* Info.plist */; };
 		9B54E4591F7C95CF00108F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B54E4531F7C95CF00108F3C /* LaunchScreen.storyboard */; };
@@ -22,6 +22,7 @@
 		9B54E45C1F7C95CF00108F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4581F7C95CF00108F3C /* main.m */; };
 		9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E45F1F7C961800108F3C /* FCAppDelegate.m */; };
 		9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */; };
+		9B56281E1F9843B70064C349 /* FCAllDishesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56281D1F9843B70064C349 /* FCAllDishesModel.m */; };
 		9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */; };
 		9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */; };
 		9B68D6491F94B785006F970D /* FCSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68D6481F94B785006F970D /* FCSheetView.m */; };
@@ -57,14 +58,14 @@
 		9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseLoadingView.m; sourceTree = "<group>"; };
 		9B532A091F8CA27E00C07458 /* FCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseTabBarViewController.h; sourceTree = "<group>"; };
 		9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseTabBarViewController.m; sourceTree = "<group>"; };
-		9B532A0F1F8CA3E800C07458 /* FCHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCHomePageViewController.h; sourceTree = "<group>"; };
-		9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCHomePageViewController.m; sourceTree = "<group>"; };
-		9B532A121F8CA41F00C07458 /* FCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDetailViewController.h; sourceTree = "<group>"; };
-		9B532A131F8CA41F00C07458 /* FCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDetailViewController.m; sourceTree = "<group>"; };
-		9B532A151F8CA43200C07458 /* FCMyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCMyMessageViewController.h; sourceTree = "<group>"; };
-		9B532A161F8CA43200C07458 /* FCMyMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCMyMessageViewController.m; sourceTree = "<group>"; };
 		9B532A181F8CCADC00C07458 /* FCBaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseNavigationViewController.h; sourceTree = "<group>"; };
 		9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseNavigationViewController.m; sourceTree = "<group>"; };
+		9B5497281F975E74006773D0 /* FCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCDetailViewController.h; sourceTree = "<group>"; };
+		9B5497291F975E74006773D0 /* FCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCDetailViewController.m; sourceTree = "<group>"; };
+		9B54972F1F975E84006773D0 /* FCHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHomePageViewController.h; sourceTree = "<group>"; };
+		9B5497301F975E84006773D0 /* FCHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCHomePageViewController.m; sourceTree = "<group>"; };
+		9B5497361F975E8F006773D0 /* FCMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMyMessageViewController.h; sourceTree = "<group>"; };
+		9B5497371F975E8F006773D0 /* FCMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMyMessageViewController.m; sourceTree = "<group>"; };
 		9B54E41A1F7C92E100108F3C /* Foods Cook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foods Cook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B54E4321F7C92E100108F3C /* Foods CookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foods CookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B54E4361F7C92E100108F3C /* Foods_CookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foods_CookTests.m; sourceTree = "<group>"; };
@@ -78,6 +79,8 @@
 		9B54E45F1F7C961800108F3C /* FCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAppDelegate.m; sourceTree = "<group>"; };
 		9B54E4671F7CFE3200108F3C /* FCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseViewController.h; sourceTree = "<group>"; };
 		9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseViewController.m; sourceTree = "<group>"; };
+		9B56281C1F9843B70064C349 /* FCAllDishesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCAllDishesModel.h; sourceTree = "<group>"; };
+		9B56281D1F9843B70064C349 /* FCAllDishesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCAllDishesModel.m; sourceTree = "<group>"; };
 		9B56768D1F7DDB0D00DE38F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9B56768E1F7E190F00DE38F5 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
@@ -131,8 +134,9 @@
 		9B532A0C1F8CA3C300C07458 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9B532A0F1F8CA3E800C07458 /* FCHomePageViewController.h */,
-				9B532A101F8CA3E800C07458 /* FCHomePageViewController.m */,
+				9B54972E1F975E84006773D0 /* Controllers */,
+				9B54972D1F975E84006773D0 /* Models */,
+				9B5497311F975E84006773D0 /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -140,8 +144,9 @@
 		9B532A0D1F8CA3C300C07458 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				9B532A121F8CA41F00C07458 /* FCDetailViewController.h */,
-				9B532A131F8CA41F00C07458 /* FCDetailViewController.m */,
+				9B5497271F975E74006773D0 /* Controllers */,
+				9B54972B1F975E74006773D0 /* Models */,
+				9B54972A1F975E74006773D0 /* Views */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -149,10 +154,82 @@
 		9B532A0E1F8CA3C300C07458 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				9B532A151F8CA43200C07458 /* FCMyMessageViewController.h */,
-				9B532A161F8CA43200C07458 /* FCMyMessageViewController.m */,
+				9B5497351F975E8F006773D0 /* Controllers */,
+				9B5497341F975E8F006773D0 /* Models */,
+				9B5497331F975E8F006773D0 /* Views */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		9B5497271F975E74006773D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B5497281F975E74006773D0 /* FCDetailViewController.h */,
+				9B5497291F975E74006773D0 /* FCDetailViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B54972A1F975E74006773D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B54972B1F975E74006773D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B54972D1F975E84006773D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B56281C1F9843B70064C349 /* FCAllDishesModel.h */,
+				9B56281D1F9843B70064C349 /* FCAllDishesModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B54972E1F975E84006773D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B54972F1F975E84006773D0 /* FCHomePageViewController.h */,
+				9B5497301F975E84006773D0 /* FCHomePageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B5497311F975E84006773D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B5497331F975E8F006773D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B5497341F975E8F006773D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B5497351F975E8F006773D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B5497361F975E8F006773D0 /* FCMyMessageViewController.h */,
+				9B5497371F975E8F006773D0 /* FCMyMessageViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9B54E4111F7C92E100108F3C = {
@@ -569,15 +646,16 @@
 			files = (
 				9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */,
 				9B68D6491F94B785006F970D /* FCSheetView.m in Sources */,
-				9B532A171F8CA43200C07458 /* FCMyMessageViewController.m in Sources */,
 				9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */,
 				9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */,
 				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
-				9B532A141F8CA41F00C07458 /* FCDetailViewController.m in Sources */,
-				9B532A111F8CA3E800C07458 /* FCHomePageViewController.m in Sources */,
+				9B5497381F975E8F006773D0 /* FCMyMessageViewController.m in Sources */,
+				9B5497321F975E84006773D0 /* FCHomePageViewController.m in Sources */,
 				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
+				9B56281E1F9843B70064C349 /* FCAllDishesModel.m in Sources */,
 				9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
+				9B54972C1F975E74006773D0 /* FCDetailViewController.m in Sources */,
 				9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

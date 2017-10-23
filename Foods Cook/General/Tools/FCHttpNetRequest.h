@@ -24,6 +24,8 @@ typedef void(^FailtureBlock)(NSError *error);
 
 @interface FCHttpNetRequest : NSObject
 
++ (instancetype)sharedNetRequest;
+
 - (void)getWithURLString:(NSString *)urlString parameters:(id)parameters success:(SuccessBlock)success failture:(FailtureBlock)failture;
 
 
