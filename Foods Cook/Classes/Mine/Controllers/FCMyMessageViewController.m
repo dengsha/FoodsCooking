@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"我的"];
+    [self setTitle:@"收藏"];
     // Do any additional setup after loading the view.
 }
 

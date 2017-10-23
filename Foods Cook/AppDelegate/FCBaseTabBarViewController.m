@@ -28,7 +28,7 @@
     FCDetailViewController *detailVC = [[FCDetailViewController alloc] init];
     [self addChildViewController:detailVC image:@"message" selectImage:@"message_select" itemTitle:@"详情"];
     FCMyMessageViewController *mineVC = [[FCMyMessageViewController alloc] init];
-    [self addChildViewController:mineVC image:@"mine" selectImage:@"mine_select" itemTitle:@"我的"];
+    [self addChildViewController:mineVC image:@"mine" selectImage:@"mine_select" itemTitle:@"收藏"];
 }
 
 - (void)addChildViewController:(UIViewController *)childViewController image:(NSString *)image selectImage:(NSString *)selectImage itemTitle:(NSString *)title{
