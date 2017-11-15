@@ -11,6 +11,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "FCHttpNetRequest.h"
 #import "FCAllDishesModel.h"
+#import "WeakTimer.h"
 
 static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
 
@@ -18,10 +19,15 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
 
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSArray<FCClassesOfDishesModel *> *dishesArray;
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
 @implementation FCHomePageViewController
+
+- (void)dealloc{
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,7 +43,11 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
         make.edges.equalTo(self.view);
     }];
     
-    [self httpGetDishes];
+//    [self httpGetDishes];
+    
+    
+    self.timer = [WeakTimer scheduledTimerWithTimerInterval:2 target:self selector:@selector(test) userInfo:nil repeats:NO];
+    
 }
 
 #pragma mark lazyInit
@@ -52,6 +62,10 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
 }
 
 #pragma mark private
+- (void)test{
+    NSLog(@"12434");
+}
+
 - (void)jump:(id)sender{
 //    // 获得NSURLSession对象
 //    NSURLSession *session = [NSURLSession sharedSession];
@@ -89,17 +103,15 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
     [[FCHttpNetRequest sharedNetRequest] postWithURLString:@"http://apis.juhe.cn/cook/category" parameters:@{@"parentid":@"10001"} success:^(id responseObject) {
         NSArray *result = responseObject[@"result"];
         NSDictionary *dic = result[0];
-        
-//        [result objectForKey:@"list"];
-//        NSError *error = nil;
-//        FCAllDishesModel *model = [[FCAllDishesModel alloc] initWithDictionary:result error:&error];
-//        if (!error) {
-//            NSLog(@"chengong");
-//        }else{
-//            NSLog(@"fail");
-//        }
-//        self.dishesArray = [NSArray arrayWithArray:model.list];
-//        [self.tableView reloadData];
+        NSError *error = nil;
+        FCAllDishesModel *model = [[FCAllDishesModel alloc] initWithDictionary:dic error:&error];
+        if (!error) {
+            NSLog(@"chengong");
+        }else{
+            NSLog(@"fail");
+        }
+        self.dishesArray = [NSArray arrayWithArray:model.list];
+        [self.tableView reloadData];
     } failture:^(NSError *error) {
         NSLog(@"失败");
     }];
