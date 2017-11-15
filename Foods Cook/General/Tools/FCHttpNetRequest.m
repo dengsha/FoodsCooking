@@ -10,11 +10,14 @@
 #import "AFHTTPRequestOperationManager.h"
 
 static NSString *const APPKey = @"a7440c57747e0f315e77cfd5bce5d038";
+@interface FCHttpNetRequest()
+
+@end
 
 @implementation FCHttpNetRequest
 
 + (instancetype)sharedNetRequest{
-    static FCHttpNetRequest *netRequest = nil;
+    static FCHttpNetRequest *netRequest;
     static dispatch_once_t onceTocken;
     dispatch_once(&onceTocken, ^{
         netRequest = [[FCHttpNetRequest alloc] init];

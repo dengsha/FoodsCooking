@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BE9EF369FDBCBEA78B05A88 /* libPods-Foods CookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */; };
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
+		9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B16C28B1FAAF27800154081 /* WeakTimer.m */; };
 		9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */; };
 		9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */; };
 		9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */; };
@@ -24,6 +25,7 @@
 		9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E4681F7CFE3200108F3C /* FCBaseViewController.m */; };
 		9B56281E1F9843B70064C349 /* FCAllDishesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56281D1F9843B70064C349 /* FCAllDishesModel.m */; };
 		9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */; };
+		9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57EC441FA70B8A00FC053C /* FCAllScreenPictureView.m */; };
 		9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */; };
 		9B68D6491F94B785006F970D /* FCSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68D6481F94B785006F970D /* FCSheetView.m */; };
 		EE5C0A2F767F0EF1DCC7CB57 /* libPods-Foods CookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */; };
@@ -54,6 +56,8 @@
 		4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods Cook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CF03BA0583A792C8A85D00 /* Pods-Foods CookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookUITests/Pods-Foods CookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B16C28A1FAAF27800154081 /* WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
+		9B16C28B1FAAF27800154081 /* WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
 		9B41E0791F8DBC3300E29BFF /* FCBaseLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseLoadingView.h; sourceTree = "<group>"; };
 		9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseLoadingView.m; sourceTree = "<group>"; };
 		9B532A091F8CA27E00C07458 /* FCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseTabBarViewController.h; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 		9B56768E1F7E190F00DE38F5 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		9B5676911F7E208C00DE38F5 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		9B57EC431FA70B8A00FC053C /* FCAllScreenPictureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCAllScreenPictureView.h; sourceTree = "<group>"; };
+		9B57EC441FA70B8A00FC053C /* FCAllScreenPictureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCAllScreenPictureView.m; sourceTree = "<group>"; };
 		9B67E6A01F8EFEDA00164F68 /* FCHttpNetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCHttpNetRequest.h; sourceTree = "<group>"; };
 		9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCHttpNetRequest.m; sourceTree = "<group>"; };
 		9B68D6471F94B785006F970D /* FCSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCSheetView.h; sourceTree = "<group>"; };
@@ -336,6 +342,10 @@
 				9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */,
 				9B68D6471F94B785006F970D /* FCSheetView.h */,
 				9B68D6481F94B785006F970D /* FCSheetView.m */,
+				9B57EC431FA70B8A00FC053C /* FCAllScreenPictureView.h */,
+				9B57EC441FA70B8A00FC053C /* FCAllScreenPictureView.m */,
+				9B16C28A1FAAF27800154081 /* WeakTimer.h */,
+				9B16C28B1FAAF27800154081 /* WeakTimer.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -650,8 +660,10 @@
 				9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */,
 				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
 				9B5497381F975E8F006773D0 /* FCMyMessageViewController.m in Sources */,
+				9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */,
 				9B5497321F975E84006773D0 /* FCHomePageViewController.m in Sources */,
 				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
+				9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */,
 				9B56281E1F9843B70064C349 /* FCAllDishesModel.m in Sources */,
 				9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
