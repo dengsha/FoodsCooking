@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -3)];
+    self.tabBar.translucent = NO;
 //    [[UITabBar appearance] setShadowImage:[UIImage new]];
 //    [[UITabBar appearance] setBackgroundImage:[[UIImage alloc]init]];
     FCHomePageViewController *homeVC = [[FCHomePageViewController alloc] init];

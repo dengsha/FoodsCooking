@@ -9,6 +9,7 @@
 #import "FCDetailViewController.h"
 #import "FCAllScreenPictureView.h"
 #import "FCHttpNetRequest.h"
+#import "FCDetailStepViewController.h"
 
 @interface FCDetailViewController ()
 
@@ -67,8 +68,10 @@
 }
 
 - (void)button1:(id)sender{
-    FCHttpNetRequest *request = [FCHttpNetRequest sharedNetRequest];
-    NSLog(@"%p",request);
+//    FCHttpNetRequest *request = [FCHttpNetRequest sharedNetRequest];
+//    NSLog(@"%p",request);
+    FCDetailStepViewController *vc = [[FCDetailStepViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)button2:(id)sender{
