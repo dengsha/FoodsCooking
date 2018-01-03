@@ -8,7 +8,9 @@
 
 #import "FCBaseNavigationViewController.h"
 
-@interface FCBaseNavigationViewController ()
+@interface FCBaseNavigationViewController (UINavigationControllerDelegate)
+
+@property (nonatomic, assign)BOOL currentAnimation;
 
 @end
 
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:ColorWithValue(ThemColor),NSFontAttributeName:[UIFont systemFontOfSize:18]}];
+    self.navigationBar.translucent = NO;
 }
 
 - (void)didReceiveMemoryWarning {

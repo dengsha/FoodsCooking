@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpViews];
+    self.view.backgroundColor = ColorWithValue(0xf2f2f2);
 }
 
 - (void)setUpViews {

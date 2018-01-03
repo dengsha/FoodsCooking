@@ -36,6 +36,7 @@
         [self.target performSelector:self.selector withObject:timer.userInfo afterDelay:0.f];
     }else{
         [self.timer invalidate];
+        self.timer = nil;
     }
 }
 

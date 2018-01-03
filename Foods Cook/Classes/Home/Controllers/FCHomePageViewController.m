@@ -47,7 +47,6 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
     
     
     self.timer = [WeakTimer scheduledTimerWithTimerInterval:2 target:self selector:@selector(test) userInfo:nil repeats:NO];
-    
 }
 
 #pragma mark lazyInit
@@ -57,6 +56,7 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.backgroundColor = ColorWithValue(0xf2f2f2);
     }
     return _tableView;
 }

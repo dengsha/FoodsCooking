@@ -28,6 +28,7 @@
 		9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57EC441FA70B8A00FC053C /* FCAllScreenPictureView.m */; };
 		9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */; };
 		9B68D6491F94B785006F970D /* FCSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68D6481F94B785006F970D /* FCSheetView.m */; };
+		9BAA22EC1FFB6DB400688369 /* FCDetailStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA22EB1FFB6DB400688369 /* FCDetailStepViewController.m */; };
 		EE5C0A2F767F0EF1DCC7CB57 /* libPods-Foods CookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCHttpNetRequest.m; sourceTree = "<group>"; };
 		9B68D6471F94B785006F970D /* FCSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCSheetView.h; sourceTree = "<group>"; };
 		9B68D6481F94B785006F970D /* FCSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCSheetView.m; sourceTree = "<group>"; };
+		9BAA22EA1FFB6DB400688369 /* FCDetailStepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDetailStepViewController.h; sourceTree = "<group>"; };
+		9BAA22EB1FFB6DB400688369 /* FCDetailStepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDetailStepViewController.m; sourceTree = "<group>"; };
 		D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8976BA13F4D5EDF0F486045 /* Pods-Foods CookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookTests/Pods-Foods CookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +175,8 @@
 			children = (
 				9B5497281F975E74006773D0 /* FCDetailViewController.h */,
 				9B5497291F975E74006773D0 /* FCDetailViewController.m */,
+				9BAA22EA1FFB6DB400688369 /* FCDetailStepViewController.h */,
+				9BAA22EB1FFB6DB400688369 /* FCDetailStepViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -668,6 +673,7 @@
 				9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
 				9B54972C1F975E74006773D0 /* FCDetailViewController.m in Sources */,
+				9BAA22EC1FFB6DB400688369 /* FCDetailStepViewController.m in Sources */,
 				9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
