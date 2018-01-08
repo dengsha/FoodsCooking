@@ -10,8 +10,9 @@
 #import "FCAllScreenPictureView.h"
 #import "FCHttpNetRequest.h"
 #import "FCDetailStepViewController.h"
+#import <Photos/Photos.h>
 
-@interface FCDetailViewController ()
+@interface FCDetailViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong)UIImageView *imageView;
 @property (nonatomic, assign)CGFloat totalScale;
@@ -75,8 +76,17 @@
 }
 
 - (void)button2:(id)sender{
-    FCHttpNetRequest *request = [FCHttpNetRequest sharedNetRequest];
-    NSLog(@"%p",request);
+//    FCHttpNetRequest *request = [FCHttpNetRequest sharedNetRequest];
+//    NSLog(@"%p",request);
+    
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        return;
+    }else{
+        UIImagePickerController *pic = [[UIImagePickerController alloc] init];
+        pic.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        pic.delegate = self;
+        [self presentViewController:pic animated:YES completion:nil];
+    }
 }
 
 - (void)bigAction:(UITapGestureRecognizer *)gesture{
@@ -88,15 +98,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

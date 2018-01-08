@@ -28,7 +28,9 @@
 		9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57EC441FA70B8A00FC053C /* FCAllScreenPictureView.m */; };
 		9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */; };
 		9B68D6491F94B785006F970D /* FCSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B68D6481F94B785006F970D /* FCSheetView.m */; };
+		9B734F8D2003463400B32055 /* MoveScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B734F8C2003463400B32055 /* MoveScrollView.m */; };
 		9BAA22EC1FFB6DB400688369 /* FCDetailStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA22EB1FFB6DB400688369 /* FCDetailStepViewController.m */; };
+		9BFDA4311FFDBF8D008CD401 /* FCDrectionCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFDA4301FFDBF8D008CD401 /* FCDrectionCarouselView.m */; };
 		EE5C0A2F767F0EF1DCC7CB57 /* libPods-Foods CookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -96,8 +98,12 @@
 		9B67E6A11F8EFEDA00164F68 /* FCHttpNetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCHttpNetRequest.m; sourceTree = "<group>"; };
 		9B68D6471F94B785006F970D /* FCSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCSheetView.h; sourceTree = "<group>"; };
 		9B68D6481F94B785006F970D /* FCSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCSheetView.m; sourceTree = "<group>"; };
+		9B734F8B2003463400B32055 /* MoveScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveScrollView.h; sourceTree = "<group>"; };
+		9B734F8C2003463400B32055 /* MoveScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveScrollView.m; sourceTree = "<group>"; };
 		9BAA22EA1FFB6DB400688369 /* FCDetailStepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDetailStepViewController.h; sourceTree = "<group>"; };
 		9BAA22EB1FFB6DB400688369 /* FCDetailStepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDetailStepViewController.m; sourceTree = "<group>"; };
+		9BFDA42F1FFDBF8D008CD401 /* FCDrectionCarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDrectionCarouselView.h; sourceTree = "<group>"; };
+		9BFDA4301FFDBF8D008CD401 /* FCDrectionCarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDrectionCarouselView.m; sourceTree = "<group>"; };
 		D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8976BA13F4D5EDF0F486045 /* Pods-Foods CookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookTests/Pods-Foods CookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -351,6 +357,10 @@
 				9B57EC441FA70B8A00FC053C /* FCAllScreenPictureView.m */,
 				9B16C28A1FAAF27800154081 /* WeakTimer.h */,
 				9B16C28B1FAAF27800154081 /* WeakTimer.m */,
+				9BFDA42F1FFDBF8D008CD401 /* FCDrectionCarouselView.h */,
+				9BFDA4301FFDBF8D008CD401 /* FCDrectionCarouselView.m */,
+				9B734F8B2003463400B32055 /* MoveScrollView.h */,
+				9B734F8C2003463400B32055 /* MoveScrollView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -661,7 +671,9 @@
 			files = (
 				9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */,
 				9B68D6491F94B785006F970D /* FCSheetView.m in Sources */,
+				9B734F8D2003463400B32055 /* MoveScrollView.m in Sources */,
 				9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */,
+				9BFDA4311FFDBF8D008CD401 /* FCDrectionCarouselView.m in Sources */,
 				9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */,
 				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
 				9B5497381F975E8F006773D0 /* FCMyMessageViewController.m in Sources */,
