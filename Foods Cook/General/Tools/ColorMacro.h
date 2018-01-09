@@ -16,6 +16,8 @@
 static const unsigned long ThemColor = 0x1b8bff;
 ///黑色
 static const unsigned long BlackTextColor = 0x333333;
+///背景色
+static const unsigned long BackGroundColor = 0xf2f2f2;
 
 /**
  根据16进制设置颜色

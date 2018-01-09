@@ -10,6 +10,10 @@
 		2BE9EF369FDBCBEA78B05A88 /* libPods-Foods CookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */; };
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
 		9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B16C28B1FAAF27800154081 /* WeakTimer.m */; };
+		9B26AF3720049A920066227E /* PhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3620049A920066227E /* PhotoAlbumViewController.m */; };
+		9B26AF3A20049AED0066227E /* PhotoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3920049AED0066227E /* PhotoAlbumCell.m */; };
+		9B26AF402004B6BA0066227E /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3F2004B6BA0066227E /* PhotoDetailViewController.m */; };
+		9B26AF432004BED80066227E /* PhotoDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF422004BED80066227E /* PhotoDetailCollectionViewCell.m */; };
 		9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */; };
 		9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A0A1F8CA27E00C07458 /* FCBaseTabBarViewController.m */; };
 		9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B532A191F8CCADC00C07458 /* FCBaseNavigationViewController.m */; };
@@ -61,6 +65,14 @@
 		78CF03BA0583A792C8A85D00 /* Pods-Foods CookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookUITests/Pods-Foods CookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B16C28A1FAAF27800154081 /* WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
 		9B16C28B1FAAF27800154081 /* WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
+		9B26AF3520049A920066227E /* PhotoAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumViewController.h; sourceTree = "<group>"; };
+		9B26AF3620049A920066227E /* PhotoAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumViewController.m; sourceTree = "<group>"; };
+		9B26AF3820049AED0066227E /* PhotoAlbumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumCell.h; sourceTree = "<group>"; };
+		9B26AF3920049AED0066227E /* PhotoAlbumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumCell.m; sourceTree = "<group>"; };
+		9B26AF3E2004B6BA0066227E /* PhotoDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		9B26AF3F2004B6BA0066227E /* PhotoDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		9B26AF412004BED80066227E /* PhotoDetailCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDetailCollectionViewCell.h; sourceTree = "<group>"; };
+		9B26AF422004BED80066227E /* PhotoDetailCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailCollectionViewCell.m; sourceTree = "<group>"; };
 		9B41E0791F8DBC3300E29BFF /* FCBaseLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseLoadingView.h; sourceTree = "<group>"; };
 		9B41E07A1F8DBC3300E29BFF /* FCBaseLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCBaseLoadingView.m; sourceTree = "<group>"; };
 		9B532A091F8CA27E00C07458 /* FCBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCBaseTabBarViewController.h; sourceTree = "<group>"; };
@@ -136,6 +148,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B26AF3420049A360066227E /* PhotosAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				9B26AF3520049A920066227E /* PhotoAlbumViewController.h */,
+				9B26AF3620049A920066227E /* PhotoAlbumViewController.m */,
+				9B26AF3820049AED0066227E /* PhotoAlbumCell.h */,
+				9B26AF3920049AED0066227E /* PhotoAlbumCell.m */,
+				9B26AF3E2004B6BA0066227E /* PhotoDetailViewController.h */,
+				9B26AF3F2004B6BA0066227E /* PhotoDetailViewController.m */,
+				9B26AF412004BED80066227E /* PhotoDetailCollectionViewCell.h */,
+				9B26AF422004BED80066227E /* PhotoDetailCollectionViewCell.m */,
+			);
+			path = PhotosAlbum;
+			sourceTree = "<group>";
+		};
 		9B532A081F8CA0A200C07458 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +371,7 @@
 		9B56768C1F7DDA3100DE38F5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9B26AF3420049A360066227E /* PhotosAlbum */,
 				9B56768E1F7E190F00DE38F5 /* UIColor+Hex.h */,
 				9B56768F1F7E190F00DE38F5 /* UIColor+Hex.m */,
 				9B5676911F7E208C00DE38F5 /* ColorMacro.h */,
@@ -675,17 +703,21 @@
 				9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */,
 				9BFDA4311FFDBF8D008CD401 /* FCDrectionCarouselView.m in Sources */,
 				9B532A0B1F8CA27E00C07458 /* FCBaseTabBarViewController.m in Sources */,
+				9B26AF3A20049AED0066227E /* PhotoAlbumCell.m in Sources */,
 				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
 				9B5497381F975E8F006773D0 /* FCMyMessageViewController.m in Sources */,
 				9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */,
 				9B5497321F975E84006773D0 /* FCHomePageViewController.m in Sources */,
 				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
 				9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */,
+				9B26AF402004B6BA0066227E /* PhotoDetailViewController.m in Sources */,
 				9B56281E1F9843B70064C349 /* FCAllDishesModel.m in Sources */,
+				9B26AF3720049A920066227E /* PhotoAlbumViewController.m in Sources */,
 				9B41E07B1F8DBC3300E29BFF /* FCBaseLoadingView.m in Sources */,
 				9B54E45C1F7C95CF00108F3C /* main.m in Sources */,
 				9B54972C1F975E74006773D0 /* FCDetailViewController.m in Sources */,
 				9BAA22EC1FFB6DB400688369 /* FCDetailStepViewController.m in Sources */,
+				9B26AF432004BED80066227E /* PhotoDetailCollectionViewCell.m in Sources */,
 				9B532A1A1F8CCADC00C07458 /* FCBaseNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

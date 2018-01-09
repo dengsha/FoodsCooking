@@ -11,6 +11,7 @@
 #import "FCHttpNetRequest.h"
 #import "FCDetailStepViewController.h"
 #import <Photos/Photos.h>
+#import "PhotoAlbumViewController.h"
 
 @interface FCDetailViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -79,14 +80,19 @@
 //    FCHttpNetRequest *request = [FCHttpNetRequest sharedNetRequest];
 //    NSLog(@"%p",request);
     
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        return;
-    }else{
-        UIImagePickerController *pic = [[UIImagePickerController alloc] init];
-        pic.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        pic.delegate = self;
-        [self presentViewController:pic animated:YES completion:nil];
-    }
+    ///系统相册
+//    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+//        return;
+//    }else{
+//        UIImagePickerController *pic = [[UIImagePickerController alloc] init];
+//        pic.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+//        pic.delegate = self;
+//        [self presentViewController:pic animated:YES completion:nil];
+//    }
+    
+    PhotoAlbumViewController *vc = [[PhotoAlbumViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)bigAction:(UITapGestureRecognizer *)gesture{
