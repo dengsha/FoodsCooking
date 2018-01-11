@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BE9EF369FDBCBEA78B05A88 /* libPods-Foods CookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */; };
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
+		9B0BE052200743CA00E48468 /* FCChooseListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BE051200743CA00E48468 /* FCChooseListView.m */; };
 		9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B16C28B1FAAF27800154081 /* WeakTimer.m */; };
 		9B26AF3720049A920066227E /* PhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3620049A920066227E /* PhotoAlbumViewController.m */; };
 		9B26AF3A20049AED0066227E /* PhotoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3920049AED0066227E /* PhotoAlbumCell.m */; };
@@ -63,6 +64,8 @@
 		4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods Cook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CF03BA0583A792C8A85D00 /* Pods-Foods CookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookUITests/Pods-Foods CookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B0BE050200743CA00E48468 /* FCChooseListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCChooseListView.h; sourceTree = "<group>"; };
+		9B0BE051200743CA00E48468 /* FCChooseListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCChooseListView.m; sourceTree = "<group>"; };
 		9B16C28A1FAAF27800154081 /* WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
 		9B16C28B1FAAF27800154081 /* WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
 		9B26AF3520049A920066227E /* PhotoAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumViewController.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 		9B54972A1F975E74006773D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B0BE050200743CA00E48468 /* FCChooseListView.h */,
+				9B0BE051200743CA00E48468 /* FCChooseListView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -698,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B54E4691F7CFE3200108F3C /* FCBaseViewController.m in Sources */,
+				9B0BE052200743CA00E48468 /* FCChooseListView.m in Sources */,
 				9B68D6491F94B785006F970D /* FCSheetView.m in Sources */,
 				9B734F8D2003463400B32055 /* MoveScrollView.m in Sources */,
 				9B67E6A21F8EFEDA00164F68 /* FCHttpNetRequest.m in Sources */,

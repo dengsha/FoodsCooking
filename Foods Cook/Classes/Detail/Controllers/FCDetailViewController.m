@@ -12,6 +12,7 @@
 #import "FCDetailStepViewController.h"
 #import <Photos/Photos.h>
 #import "PhotoAlbumViewController.h"
+#import "FCChooseListView.h"
 
 @interface FCDetailViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -90,9 +91,18 @@
 //        [self presentViewController:pic animated:YES completion:nil];
 //    }
     
-    PhotoAlbumViewController *vc = [[PhotoAlbumViewController alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+    ///自定义多选相册
+//    PhotoAlbumViewController *vc = [[PhotoAlbumViewController alloc] init];
+//    vc.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    FCChooseListView *view = [[FCChooseListView alloc] init];
+    view.dataAray = @[@"你好",@"再见"];
+    [view show];
+//    view.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);//[[UIScreen mainScreen] bounds];
+//    [[UIApplication sharedApplication].keyWindow addSubview:view];
+//    [self.view addSubview:view];
+    
 }
 
 - (void)bigAction:(UITapGestureRecognizer *)gesture{

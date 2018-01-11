@@ -22,7 +22,23 @@
 }
 
 - (void)setUpViews {
-    
+    [self setBackButton];
+}
+
+- (void)setBackButton{
+    if (self.navigationController.viewControllers.count > 1) {
+        UIImage *image = [UIImage imageNamed:@"back_base"];
+        UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
+        self.navigationItem.leftBarButtonItem = buttonItem;
+    }
+}
+
+- (void)backAction{
+    if (self.navigationController.viewControllers.count > 1) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 #pragma mark UINavigation Setting

@@ -37,6 +37,16 @@ static NSString *const PhotoAlbumCellIdentifier = @"PhotoAlbumCellIdentifier";
 }
 
 - (void)getAlbums{
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        PHFetchResult<PHAssetCollection *> *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+//        for (PHAssetCollection *collection in assetCollections) {
+//            PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
+//            if (assets.count > 0) {
+//                [self.dataArray addObject:collection];
+//            }
+//        }
+//    });
+    
     PHFetchResult<PHAssetCollection *> *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
     for (PHAssetCollection *collection in assetCollections) {
         PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
@@ -84,6 +94,7 @@ static NSString *const PhotoAlbumCellIdentifier = @"PhotoAlbumCellIdentifier";
         [assetsArray addObject:asset];
     }
     PhotoDetailViewController *controller = [[PhotoDetailViewController alloc] initWithPHColection:assetsArray];
+    controller.title = collection.localizedTitle;
     [self.navigationController pushViewController:controller animated:YES];
 }
 
