@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2BE9EF369FDBCBEA78B05A88 /* libPods-Foods CookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48BFCDB148890478BAF1FC2 /* libPods-Foods CookTests.a */; };
 		505569EA669CB218DD6DFEDE /* libPods-Foods Cook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */; };
+		9B0A3F7F2063824C006DCEB7 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A3F7E2063824C006DCEB7 /* BaseWebViewController.m */; };
+		9B0A3F8220638F7E006DCEB7 /* BaseScriptMessageHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A3F8120638F7E006DCEB7 /* BaseScriptMessageHanlder.m */; };
 		9B0BE052200743CA00E48468 /* FCChooseListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BE051200743CA00E48468 /* FCChooseListView.m */; };
 		9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B16C28B1FAAF27800154081 /* WeakTimer.m */; };
 		9B26AF3720049A920066227E /* PhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3620049A920066227E /* PhotoAlbumViewController.m */; };
@@ -64,6 +66,10 @@
 		4FC5A8DD393151765FE59646 /* libPods-Foods CookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods CookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3A71C667805903BEDFA33D /* libPods-Foods Cook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foods Cook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CF03BA0583A792C8A85D00 /* Pods-Foods CookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foods CookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foods CookUITests/Pods-Foods CookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B0A3F7D2063824C006DCEB7 /* BaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		9B0A3F7E2063824C006DCEB7 /* BaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		9B0A3F8020638F7E006DCEB7 /* BaseScriptMessageHanlder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScriptMessageHanlder.h; sourceTree = "<group>"; };
+		9B0A3F8120638F7E006DCEB7 /* BaseScriptMessageHanlder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseScriptMessageHanlder.m; sourceTree = "<group>"; };
 		9B0BE050200743CA00E48468 /* FCChooseListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCChooseListView.h; sourceTree = "<group>"; };
 		9B0BE051200743CA00E48468 /* FCChooseListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCChooseListView.m; sourceTree = "<group>"; };
 		9B16C28A1FAAF27800154081 /* WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
@@ -151,6 +157,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0A3F7C206381DE006DCEB7 /* BaseWebViewTool */ = {
+			isa = PBXGroup;
+			children = (
+				9B0A3F7D2063824C006DCEB7 /* BaseWebViewController.h */,
+				9B0A3F7E2063824C006DCEB7 /* BaseWebViewController.m */,
+				9B0A3F8020638F7E006DCEB7 /* BaseScriptMessageHanlder.h */,
+				9B0A3F8120638F7E006DCEB7 /* BaseScriptMessageHanlder.m */,
+			);
+			path = BaseWebViewTool;
+			sourceTree = "<group>";
+		};
 		9B26AF3420049A360066227E /* PhotosAlbum */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +373,7 @@
 		9B54E4651F7CFDD500108F3C /* General */ = {
 			isa = PBXGroup;
 			children = (
+				9B0A3F7C206381DE006DCEB7 /* BaseWebViewTool */,
 				9B56768C1F7DDA3100DE38F5 /* Tools */,
 				9B54E4661F7CFDD500108F3C /* BaseNeeds */,
 			);
@@ -712,10 +730,12 @@
 				9B26AF3A20049AED0066227E /* PhotoAlbumCell.m in Sources */,
 				9B5676901F7E190F00DE38F5 /* UIColor+Hex.m in Sources */,
 				9B5497381F975E8F006773D0 /* FCMyMessageViewController.m in Sources */,
+				9B0A3F7F2063824C006DCEB7 /* BaseWebViewController.m in Sources */,
 				9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */,
 				9B5497321F975E84006773D0 /* FCHomePageViewController.m in Sources */,
 				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
 				9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */,
+				9B0A3F8220638F7E006DCEB7 /* BaseScriptMessageHanlder.m in Sources */,
 				9B26AF402004B6BA0066227E /* PhotoDetailViewController.m in Sources */,
 				9B56281E1F9843B70064C349 /* FCAllDishesModel.m in Sources */,
 				9B26AF3720049A920066227E /* PhotoAlbumViewController.m in Sources */,
