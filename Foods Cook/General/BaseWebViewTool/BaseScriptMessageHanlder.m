@@ -51,4 +51,25 @@
     [self performSelector:NSSelectorFromString(method) withObject:message afterDelay:0];
 }
 
+#pragma mark WKNavigationDelegate
+///页面开始加载时调用
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
+    
+}
+
+///加载完成之后
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
+    
+}
+
+///加载失败之后
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    
+}
+
+///在收到响应后，决定是否跳转
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+    
+}
+
 @end
