@@ -12,6 +12,7 @@
 #import "FCHttpNetRequest.h"
 #import "FCAllDishesModel.h"
 #import "WeakTimer.h"
+#import "GCDTestViewController.h"
 
 static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
 
@@ -19,6 +20,7 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
 
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSArray<FCClassesOfDishesModel *> *dishesArray;
+@property (nonatomic, strong)NSArray *array;
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
@@ -33,20 +35,32 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
     [super viewDidLoad];
     [self setTitle:@"菜谱全集"];
     
-    UIButton *bnt = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
-    bnt.backgroundColor = [UIColor blueColor];
-    [bnt addTarget:self action:@selector(jump:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:bnt];
+//    UIButton *bnt = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+//    bnt.backgroundColor = [UIColor blueColor];
+//    [bnt addTarget:self action:@selector(jump:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:bnt];
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
     
+    UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressAction:)];
+    gesture.minimumPressDuration = 3;
+    [self.tableView addGestureRecognizer:gesture];
 //    [self httpGetDishes];
     
     
-    self.timer = [WeakTimer scheduledTimerWithTimerInterval:2 target:self selector:@selector(test) userInfo:nil repeats:NO];
+//    self.timer = [WeakTimer scheduledTimerWithTimerInterval:2 target:self selector:@selector(test) userInfo:nil repeats:NO];
+}
+
+- (void)longPressAction:(UILongPressGestureRecognizer *)gesture{
+    CGPoint point = [gesture locationInView:gesture.view];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:point];
+    if (!indexPath) {
+        return;
+    }
+    
 }
 
 #pragma mark lazyInit
@@ -57,46 +71,22 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.backgroundColor = ColorWithValue(0xf2f2f2);
+//        [_tableView setEditing:YES animated:YES];
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:fAllDishesIdentifier];
     }
     return _tableView;
+}
+
+- (NSArray *)array{
+    if (!_array) {
+        _array = @[@"CGCDTest",@"HTTP"];
+    }
+    return _array;
 }
 
 #pragma mark private
 - (void)test{
     NSLog(@"12434");
-}
-
-- (void)jump:(id)sender{
-//    // 获得NSURLSession对象
-//    NSURLSession *session = [NSURLSession sharedSession];
-//
-//    // 创建请求
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@" "]];
-//
-//    // 设置请求方法
-//    request.HTTPMethod = @"POST";
-//
-//    // 设置请求体
-//    request.HTTPBody = [@" " dataUsingEncoding:NSUTF8StringEncoding];
-//
-//    // 创建任务
-//    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-//        NSLog(@"data ~~~ %@ ~~~ response ~~~ %@ ~~~ error~~~ %@", data, response , error);
-//    }];
-//
-//    // 启动任务
-//    [task resume];
-    
-    
-    
-    
-    
-    
-//    FCSheetView *sheet = [[FCSheetView alloc] initWithTitles:@[@"23",@"11"] cancleTitle:@"取消"];
-//    [self.view addSubview:sheet];
-//    [sheet mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.view);
-//    }];
 }
 
 - (void)httpGetDishes{
@@ -119,15 +109,60 @@ static NSString *const fAllDishesIdentifier = @"fAllDishesIdentifier";
 
 #pragma mark UITableViewDelegate && UITableViewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dishesArray.count;
+//    return self.dishesArray.count;
+    return self.array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:fAllDishesIdentifier];
-    FCClassesOfDishesModel *model = self.dishesArray[indexPath.row];
-    cell.textLabel.text = model.name;
+//    FCClassesOfDishesModel *model = self.dishesArray[indexPath.row];
+    NSString *test = self.array[indexPath.row];
+    cell.textLabel.text = test;
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.row) {
+        case 0:{
+            GCDTestViewController *vc = [[GCDTestViewController alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1:{
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"test";
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+//-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return UITableViewCellEditingStyleNone;
+//}
+//
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+//    NSString *content = self.array[sourceIndexPath.row];
+//    NSMutableArray *mulArray = self.array.mutableCopy;
+//    [mulArray removeObject:content];
+//    [mulArray insertObject:content atIndex:destinationIndexPath.row];
+//}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

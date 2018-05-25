@@ -19,6 +19,8 @@
 @property (nonatomic, strong)UIImageView *imageView;
 @property (nonatomic, assign)CGFloat totalScale;
 @property (nonatomic, strong)UITapGestureRecognizer *doubleGesture;
+@property (nonatomic, strong)dispatch_source_t timer_gcd;
+@property (nonatomic, strong)UIButton *button1;
 
 @end
 
@@ -40,6 +42,7 @@
     }];
     button1.backgroundColor = [UIColor redColor];
     [button1 addTarget:self action:@selector(button1:) forControlEvents:UIControlEventTouchUpInside];
+    self.button1 = button1;
     
     UIButton *button2 = [[UIButton alloc] init];
     [self.view addSubview:button2];
@@ -52,6 +55,7 @@
     button2.backgroundColor = [UIColor blueColor];
     [button2 addTarget:self action:@selector(button2:) forControlEvents:UIControlEventTouchUpInside];
     
+    [self countDownWithTime:5];
     
     
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"花"]];
@@ -103,6 +107,32 @@
 //    [[UIApplication sharedApplication].keyWindow addSubview:view];
 //    [self.view addSubview:view];
     
+}
+
+- (void)countDownWithTime:(int)time{
+    __block int timeout = time; //倒计时时间
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    self.timer_gcd = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+    dispatch_source_set_timer(self.timer_gcd,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(self.timer_gcd, ^{
+        if(timeout<=0){ //倒计时结束，关闭
+            dispatch_source_cancel(self.timer_gcd);
+            self.timer_gcd = nil;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.button1 setHidden:YES];
+//                [self viewAnimationCompletion:nil];
+            });
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (timeout > 0) {
+                    [self.button1 setTitle:[NSString stringWithFormat:@"%d",timeout] forState:UIControlStateNormal];
+//                    [self.countDownLabel setText:[NSString stringWithFormat:@"%d跳过",timeout]];
+                }
+                timeout--;
+            });
+        }
+    });
+    dispatch_resume(self.timer_gcd);
 }
 
 - (void)bigAction:(UITapGestureRecognizer *)gesture{

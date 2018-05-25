@@ -13,6 +13,7 @@
 		9B0A3F8220638F7E006DCEB7 /* BaseScriptMessageHanlder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A3F8120638F7E006DCEB7 /* BaseScriptMessageHanlder.m */; };
 		9B0BE052200743CA00E48468 /* FCChooseListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BE051200743CA00E48468 /* FCChooseListView.m */; };
 		9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B16C28B1FAAF27800154081 /* WeakTimer.m */; };
+		9B253CBD20AD5DC900DF98F1 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B253CBC20AD5DC900DF98F1 /* GCDTestViewController.m */; };
 		9B26AF3720049A920066227E /* PhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3620049A920066227E /* PhotoAlbumViewController.m */; };
 		9B26AF3A20049AED0066227E /* PhotoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3920049AED0066227E /* PhotoAlbumCell.m */; };
 		9B26AF402004B6BA0066227E /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26AF3F2004B6BA0066227E /* PhotoDetailViewController.m */; };
@@ -74,6 +75,8 @@
 		9B0BE051200743CA00E48468 /* FCChooseListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCChooseListView.m; sourceTree = "<group>"; };
 		9B16C28A1FAAF27800154081 /* WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
 		9B16C28B1FAAF27800154081 /* WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
+		9B253CBB20AD5DC900DF98F1 /* GCDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
+		9B253CBC20AD5DC900DF98F1 /* GCDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
 		9B26AF3520049A920066227E /* PhotoAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumViewController.h; sourceTree = "<group>"; };
 		9B26AF3620049A920066227E /* PhotoAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumViewController.m; sourceTree = "<group>"; };
 		9B26AF3820049AED0066227E /* PhotoAlbumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumCell.h; sourceTree = "<group>"; };
@@ -264,6 +267,8 @@
 			children = (
 				9B54972F1F975E84006773D0 /* FCHomePageViewController.h */,
 				9B5497301F975E84006773D0 /* FCHomePageViewController.m */,
+				9B253CBB20AD5DC900DF98F1 /* GCDTestViewController.h */,
+				9B253CBC20AD5DC900DF98F1 /* GCDTestViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -733,6 +738,7 @@
 				9B0A3F7F2063824C006DCEB7 /* BaseWebViewController.m in Sources */,
 				9B57EC451FA70B8A00FC053C /* FCAllScreenPictureView.m in Sources */,
 				9B5497321F975E84006773D0 /* FCHomePageViewController.m in Sources */,
+				9B253CBD20AD5DC900DF98F1 /* GCDTestViewController.m in Sources */,
 				9B54E4621F7C961800108F3C /* FCAppDelegate.m in Sources */,
 				9B16C28C1FAAF27800154081 /* WeakTimer.m in Sources */,
 				9B0A3F8220638F7E006DCEB7 /* BaseScriptMessageHanlder.m in Sources */,
