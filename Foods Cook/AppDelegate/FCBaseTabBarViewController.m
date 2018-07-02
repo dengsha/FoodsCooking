@@ -27,7 +27,7 @@
     FCHomePageViewController *homeVC = [[FCHomePageViewController alloc] init];
     [self addChildViewController:homeVC image:@"home" selectImage:@"home_select" itemTitle:@"首页"];
     FCDetailViewController *detailVC = [[FCDetailViewController alloc] init];
-    [self addChildViewController:detailVC image:@"message" selectImage:@"message_select" itemTitle:@"详情"];
+    [self addChildViewController:detailVC image:@"message" selectImage:@"message_select" itemTitle:@"控件"];
     FCMyMessageViewController *mineVC = [[FCMyMessageViewController alloc] init];
     [self addChildViewController:mineVC image:@"mine" selectImage:@"mine_select" itemTitle:@"收藏"];
 }

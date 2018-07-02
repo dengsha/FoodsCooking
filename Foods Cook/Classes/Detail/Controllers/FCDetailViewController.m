@@ -14,13 +14,21 @@
 #import "PhotoAlbumViewController.h"
 #import "FCChooseListView.h"
 
-@interface FCDetailViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+#import "TableViewCellMoveFreeViewController.h"
+#import "ADCarouselViewController.h"
+
+static NSString *const cellIdentifier = @"cell";
+
+@interface FCDetailViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)UIImageView *imageView;
 @property (nonatomic, assign)CGFloat totalScale;
 @property (nonatomic, strong)UITapGestureRecognizer *doubleGesture;
 @property (nonatomic, strong)dispatch_source_t timer_gcd;
 @property (nonatomic, strong)UIButton *button1;
+
+@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, copy)NSArray *dataArray;
 
 @end
 
@@ -29,33 +37,116 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"详情"];
+    self.dataArray = @[@"tableViewCell拖动", @"广告轮播器", @"弹窗蒙层"];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    
+    NSArray *a = [NSArray arrayWithArray:self.dataArray];
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i<a.count; i++) {
+        NSString *str = a[i];
+        [array addObject:str];
+        if (i < 1) {
+            [self changeArray:array];
+        }else{
+            [array removeAllObjects];
+        }
+    }
+    
+}
+
+- (void)changeArray:(NSMutableArray *)array{
+    [array replaceObjectAtIndex:0 withObject:@"change"];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self setNeedsStatusBarAppearanceUpdate];
+    // 这样设置状态栏样式是黑色的
+    //[self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
+    // 这样设置状态栏样式是白色的
+//    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+- (UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        _tableView.estimatedSectionHeaderHeight = 0;
+        _tableView.estimatedSectionFooterHeight = 0;
+        _tableView.estimatedRowHeight = 0;
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+    }
+    return _tableView;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    switch (indexPath.row) {
+        case 0:{
+            TableViewCellMoveFreeViewController *controller = [[TableViewCellMoveFreeViewController alloc] init];
+            controller.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+        case 1:{
+            ADCarouselViewController *controller = [[ADCarouselViewController alloc] init];
+            controller.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)setUpViews{
-    UIButton *button1 = [[UIButton alloc] init];
-    [self.view addSubview:button1];
-    [button1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@100);
-        make.left.equalTo(@10);
-        make.width.equalTo(@60);
-        make.height.equalTo(@40);
-    }];
-    button1.backgroundColor = [UIColor redColor];
-    [button1 addTarget:self action:@selector(button1:) forControlEvents:UIControlEventTouchUpInside];
-    self.button1 = button1;
-    
-    UIButton *button2 = [[UIButton alloc] init];
-    [self.view addSubview:button2];
-    [button2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@100);
-        make.left.equalTo(button1.mas_right).offset(10);
-        make.width.equalTo(@60);
-        make.height.equalTo(@40);
-    }];
-    button2.backgroundColor = [UIColor blueColor];
-    [button2 addTarget:self action:@selector(button2:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self countDownWithTime:5];
+//    UIButton *button1 = [[UIButton alloc] init];
+//    [self.view addSubview:button1];
+//    [button1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(@100);
+//        make.left.equalTo(@10);
+//        make.width.equalTo(@60);
+//        make.height.equalTo(@40);
+//    }];
+//    button1.backgroundColor = [UIColor redColor];
+//    [button1 addTarget:self action:@selector(button1:) forControlEvents:UIControlEventTouchUpInside];
+//    self.button1 = button1;
+//
+//    UIButton *button2 = [[UIButton alloc] init];
+//    [self.view addSubview:button2];
+//    [button2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(@100);
+//        make.left.equalTo(button1.mas_right).offset(10);
+//        make.width.equalTo(@60);
+//        make.height.equalTo(@40);
+//    }];
+//    button2.backgroundColor = [UIColor blueColor];
+//    [button2 addTarget:self action:@selector(button2:) forControlEvents:UIControlEventTouchUpInside];
+//
+//    [self countDownWithTime:5];
     
     
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"花"]];
